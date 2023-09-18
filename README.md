@@ -10,6 +10,7 @@ Installation:
 - Check SHA256 sum
 - Copy the Windows executable to your Desktop
 - Double click to the raccoon icon to start the program
+- You can allow to run the program, Manufacturer: szlavikszabolcs@szlavikszabolcs.hu
 - The video or the music is going to be downloaded to the Desktop.
 
 The process of the downloads:
