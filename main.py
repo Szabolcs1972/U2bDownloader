@@ -68,12 +68,12 @@ while True:
     if event == 'ReadMe':
         window["-TEXT-"].update("ReadMe")
         sg.popup_scrolled("Hardware & Software Requirements:",
-                          "- PC with Windows 11",
+                          "- PC with Windows 10/11 64bit",
                           "",
                           "Installation:",
-                          "- Copy the Windows executable in any folder in your machine",
-                          "- Double click to the u2bdownloader.exe to start the program",
-                          "- The video or the music is going to be downloaded in the same folder.",
+                          "- Copy the Windows executable to your Desktop",
+                          "- Double click to the raccoon icon to start the program",
+                          "- The video or the music is going to be downloaded to the Desktop.",
                           "",
                           "The process of the downloads:",
                           "1. Find your favourite video In YouTube",
@@ -82,16 +82,18 @@ while True:
                           "4. Please, write over the link of the example. It is the 'Ocean Drive' :)",
                           "5. The program is cheching your link starts with: https://youtu.be/",
                           "6. Select Video or Audio with the radio buttons",
-                          "If you select - Video - is going to be downloaded with the best quality in mp4 video format.",
-                          "If you select - Audio - it is goig to be downloaded as music with mp3 file extesion.",
+                          "If you select - Video - it is going to be downloaded with the best quality in mp4 video format.",
+                          "If you select - Audio - it is going to be downloaded as music with mp3 file extension.",
                           "7. Press the Download button!",
                           "8. The downloading is going to be finished, when you can see the message:",
                           "- Done! The file has been downloaded successfully! - ",
                           "and the progress indicator sets to Zero again.",
                           "",
-                          "Thanks for feedbacks!",
+                          "Thanks for your feedback!",
                           "",
                           "Happy downloading!",
+                          "Dr. Szlávik Szabolcs, 2023",
+                          "szlavikszabolcs@szlavikszabolcs.hu",
                           title="ReadMe", icon="mosomaci.ico", size=(80, 10))
 
     if event == 'Notice':
@@ -109,6 +111,8 @@ while True:
                           "Dr. Szlávik Szabolcs, 2023",
                           "https://www.szlavikszabolcs.hu/",
                           "https://github.com/Szabolcs1972/",
+                          "szlavikszabolcs@szlavikszabolcs.hu",
+                          "szlavikszabolcs@gmail.com",
                           title="Notice", icon="mosomaci.ico", size=(50, 10))
 
     if event == "Download":
