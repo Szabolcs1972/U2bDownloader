@@ -9,7 +9,7 @@ Installation:
 - Download the u2bdownloader.exe to your machine from the dist folder
 - Check SHA256 sum
 - Copy the Windows executable to your Desktop
-- Double click to the raccoon icon to start the program
+- Double click to the icon to start the program
 - You can allow to run the program, Manufacturer: szlavikszabolcs@szlavikszabolcs.hu
 - The video or the music is going to be downloaded to the Desktop.
 
@@ -24,7 +24,7 @@ If you select - Video - it is going to be downloaded with the best quality in mp
 If you select - Audio - it is goig to be downloaded as music with mp3 file extesion.
 7. Press the Download button!
 8. The downloading is going to be finished, when you can see the message:
-- Done! The file has been downloaded successfully! - 
+- Done! The ... - 
 and the progress indicator sets to Zero again.
 
 Thanks for feedbacks!
@@ -38,11 +38,19 @@ Used software products:
 PyCharm - by JetBrains s.r.o.
 Python 3 extensions
 - pytube
-- PySimpleGUI
+- PySimpleGUI - Special thanks for the licence
 - pyinstaller
+- moviepy
 
 Dr. Szlávik Szabolcs, 2023
 https://www.szlavikszabolcs.hu/
 https://github.com/Szabolcs1972/
 szlavikszabolcs@szlavikszabolcs.hu
 szlavikszabolcs@gmail.com
+
+*****************************************************************************************************
+Version 2.0 - 05-27-2024
+
+- The .mp3 file is a real audio content. The audio content of the video is saved into the .mp3 file.
+- The icon file has changed 
+*****************************************************************************************************
