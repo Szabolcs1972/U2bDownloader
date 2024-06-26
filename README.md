@@ -6,10 +6,12 @@ Hardware & Software Requirements:
 
 Installation:
 
-- Download the u2bdownloader.exe to your machine from the dist folder
+- Download the u2bdownloader2_0.exe to your machine from the ./dist folder
+- Click on the name of the file and find the download icon on the right "Download raw file"
 - Check SHA256 sum
-- Copy the Windows executable to your Desktop
-- Double click to the icon to start the program
+- Copy the Windows executable to your Desktop (or anywhere you would like to run)
+- Double click to the icon of the program to start
+- Microsoft Defender SmartScreen is going to pop up
 - You can allow to run the program, Manufacturer: szlavikszabolcs@szlavikszabolcs.hu
 - The video or the music is going to be downloaded to the Desktop.
 
@@ -53,4 +55,9 @@ Version 2.0 - 05-27-2024
 
 - The .mp3 file is a real audio content. The audio content of the video is saved into the .mp3 file.
 - The icon file has changed 
+*****************************************************************************************************
+
+Version 2.0 - 06-26-2024
+
+- The video downloading problem fixed
 *****************************************************************************************************
