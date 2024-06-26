@@ -28,8 +28,9 @@ def on_progress_video(pwindow, chunk, bytesremaining):
 
 
 def download_audio(plink):
-    youtube_object = YouTube(link, on_progress_callback=on_progress_audio(window,None,None))
+    youtube_object = YouTube(plink, on_progress_callback=on_progress_audio(window,None,None))
     youtube_object = youtube_object.streams.get_audio_only()
+    new_file = ""
 
     try:
         downloaded_file = youtube_object.download()
@@ -52,7 +53,7 @@ def download_audio(plink):
 
 
 def download_video(plink):
-    youtube_object = YouTube(link, use_oauth=True, allow_oauth_cache=True, on_progress_callback=on_progress_video(window,None,None))
+    youtube_object = YouTube(plink, on_progress_callback=on_progress_video(window,None,None))
     youtube_object = youtube_object.streams.get_highest_resolution()
     try:
         youtube_object.download()
@@ -60,8 +61,7 @@ def download_video(plink):
 
          window["-TEXT-"].update("An error occured! " + exception.__str__())
 
-
-    window["-TEXT-"].update("Done! The video was saved to " + os.path.basename(youtube_object.download()))
+    window["-TEXT-"].update("Done! The video saved to " + os.path.basename(youtube_object.download()))
     window['-PBAR-'].update(0)
 
 
@@ -147,7 +147,7 @@ while True:
                 try:
                     download_video(link)
                 except Exception as exception:
-                    print("Hiba történt ", exception)
+                    #print("Hiba történt ", exception)
                     window["-TEXT-"].update("An error occured!")
 
         else:
