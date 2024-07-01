@@ -13,7 +13,9 @@ Installation:
 - Double click to the icon of the program to start
 - Microsoft Defender SmartScreen is going to pop up
 - You can allow to run the program, Manufacturer: szlavikszabolcs@szlavikszabolcs.hu
-- The video or the music is going to be downloaded to the Desktop.
+- You can get message to have PySimpleGUI licence. You can choose 30-days free trial, or
+  you can ask licence as a Hobbyist programmer for 1 year
+- The video or the music is going to be downloaded to the Desktop or where you run the exe.
 
 The process of the downloads:
 1. Find your favourite video In YouTube
@@ -60,4 +62,9 @@ Version 2.0 - 05-27-2024
 Version 2.0 - 06-26-2024
 
 - The video downloading problem fixed
+*****************************************************************************************************
+
+Version 2.1 - 07-01-2024
+
+- correct the display of error messages
 *****************************************************************************************************

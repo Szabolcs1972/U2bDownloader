@@ -46,7 +46,7 @@ def download_audio(plink):
         #os.rename(downloaded_file, new_file)
         os.remove(downloaded_file)
     except Exception as exception:
-        window["-TEXT-"].update("An error occured!" + exception.__str__())
+        window["-TEXT-"].update("An error occured! " + exception.__str__())
 
     window["-TEXT-"].update("Done! The audio content was saved to " + os.path.basename(new_file))
     window['-PBAR-'].update(0)
@@ -69,7 +69,7 @@ menu_def = [['Help', ['ReadMe', 'Notice']]]
 layout = [[sg.Menu(menu_def)], [sg.Text("Copy the YouTube - Share link - in the textbox (for example):")], [sg.In("https://youtu.be/KDxJlW6cxRk?si=OnZnf9SPR83cSrpU", size=(50, 1), enable_events=True, key="-INPUT-")], [sg.Radio('Video (mp4)', "RADIO1", default=False, key="-INPUT2-")], [sg.Radio('Audio (mp3)', "RADIO1", default=True)], [sg.ProgressBar(100, orientation='h', expand_x=True, size=(20, 20),  key='-PBAR-')], [sg.Button("Download")], [sg.Text("and press Download, if you are ready!", key="-TEXT-")]]
 
 # Create the window
-window = sg.Window("U2b Downloader 2.0", layout, margins=(30, 25),)
+window = sg.Window("U2b Downloader 2.1", layout, margins=(30, 25),)
 window.set_icon("utube.ico")
 
 # Create an event loop
@@ -105,7 +105,7 @@ while True:
                           "Dr. Szlávik Szabolcs, 2023-2024",
                           "szlavikszabolcs@szlavikszabolcs.hu",
                           "",
-                          "Version 2.0 - 05-27-2024",
+                          "Version 2.1 - 07-01-2024",
                           "",
                           "- The .mp3 file is a real audio content. The audio content of the video is saved into the .mp3 file.",
                           "- The icon file has changed",
@@ -139,8 +139,8 @@ while True:
 
                 try:
                     download_audio(link)
-                except:
-                    window["-TEXT-"].update("An error occurred!")
+                except Exception as exception:
+                    window["-TEXT-"].update("An error occurred! " + exception.__str__())
             if values["-INPUT2-"] is True:
                 window["-TEXT-"].update("Downloading video...")
 
@@ -148,7 +148,7 @@ while True:
                     download_video(link)
                 except Exception as exception:
                     #print("Hiba történt ", exception)
-                    window["-TEXT-"].update("An error occured!")
+                    window["-TEXT-"].update("An error occured! " + exception.__str__())
 
         else:
             window["-TEXT-"].update("It seems, it is not a 'youtu.be' link!")
