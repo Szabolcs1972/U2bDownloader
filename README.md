@@ -66,5 +66,5 @@ Version 2.0 - 06-26-2024
 
 Version 2.1 - 07-01-2024
 
-- correct the display of error messages
+- correct to display error messages
 *****************************************************************************************************
